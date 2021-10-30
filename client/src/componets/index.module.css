@@ -1,0 +1,60 @@
+.inputs{
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    border: 1px solid #333333;
+}
+.prevPic{
+    /*display: flex;*/
+    width: 100%;
+    height: 200px;
+    /*border: 1px solid #715b3e;*/
+    /*align-items: center*/
+}
+.prevImg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /*border: 1px solid #715b3e;*/
+}
+.video_upl{
+    display: flex;
+    align-items: center;
+}
+.img_upl{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    border: 1px solid #333333;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #333333;
+    color: white;
+}
+.openmodal{
+    border: 1px solid #333333;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.openmodal:hover{
+    background: #333333;
+    color: white;
+}
+
+.data{
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #333333;
+    padding: 10px 0;
+}
+.cross{
+    text-align: right;
+    cursor: pointer;
+}

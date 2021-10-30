@@ -1,0 +1,155 @@
+h2{
+    margin: 0;
+}
+.movies{
+    max-width: 1000px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+.block1{
+    position: relative;
+    width: 50%;
+}
+.block2{
+    width: 50%;
+}
+.img_block{
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+}
+.img_block img{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+.name{
+    background-color: #6ab5b3;
+    margin: 0;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+    width: 97%;
+    border-radius: 0px 0px 0px 10px;
+    padding: 5px 0;
+    z-index: 1;
+    padding-left: 3%;
+}
+.data{
+    background-color: #cccccc;
+    margin: 0;
+    border-radius: 0px 0px 10px 0px;
+    padding: 5px 0;
+    padding-left: 10px;
+}
+.description{
+    color: #333333;
+    text-align: left;
+}
+.text_block h2{
+    text-align: left;
+}
+.text_block{
+    padding-left: 20px;
+}
+.btns{
+    border: 1px solid #333333;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+.btns:hover{
+    background: #333333;
+    color: white;
+}
+.inputs{
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    border: 1px solid #333333;
+}
+.prevPic{
+    /*display: flex;*/
+    width: 100%;
+    height: 200px;
+    /*border: 1px solid #715b3e;*/
+    /*align-items: center*/
+}
+.prevImg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /*border: 1px solid #715b3e;*/
+}
+.video_upl{
+    display: flex;
+    align-items: center;
+}
+.img_upl{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    border: 1px solid #333333;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #333333;
+    color: white;
+}
+.dataa{
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #333333;
+    padding: 10px 0;
+}
+.cross{
+    text-align: right;
+    cursor: pointer;
+}
+@media (max-width:600px) {
+    .movies {
+        display: block;
+    }
+    .block1 {
+        position: unset;
+        width: 100%;
+    }
+    .block2{
+        width: 100%;
+    }
+    .name {
+        position: unset;
+    }
+    .data {
+        padding: 10px 0;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .img_block img {
+        border-radius: 0;
+    }
+    .name{
+        border-radius: 0;
+        background: transparent;
+        opacity: 1;
+        text-align: left;
+        padding: 10px 0;
+        padding-left: 20px;
+    }
+    .text_block h2{
+        padding-top: 20px;
+    }
+}
