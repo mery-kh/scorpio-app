@@ -33,7 +33,8 @@ class MovieController {
 
             await newMovie.save();
             res.status(201).json({
-                    success: true
+                    success: true,
+                    data: newMovie
                 })
         }catch (e) {
             res.status(400).json({
