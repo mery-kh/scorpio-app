@@ -39,7 +39,6 @@ function Movies(props) {
         formData.append('date', startDate)
         if(picture !== null){
             formData.append('cover_image', picture)
-            alert(55)
         }
         const url = `http://localhost:4000/api/v1/update-movie/${videoId}`
         axios.patch(url, formData).then((response) => {

@@ -49,11 +49,18 @@ class MovieController {
     }
     async updateMovie(req, res) {
         try{
-            const id = req.params.id;
+            const movie = await Movie.findById(req.params.id);
             const postData = req.body;
-            const post = await Movie.findByIdAndUpdate(id, { $set : postData}, {new:true});
-            if(post) {
-                res.send(post)
+            if(req.file?.path){
+                await fs.unlink(path.join(__homedir, movie.cover_image))
+                postData.cover_image = req.file?.path;
+            }
+            const updatedMovie = await Movie.findByIdAndUpdate(req.params.id, { $set : postData}, {new:true});
+            if(updatedMovie) {
+                res.status(201).json({
+                    message: "success",
+                    data: updatedMovie
+                })
             }
             else throw new AppError('Not Found', 400);
         }catch (e) {

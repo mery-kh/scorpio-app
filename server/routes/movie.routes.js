@@ -19,5 +19,5 @@ router.post('/upload-movie',
     }, movieController.uploadMovie);
 router.delete('/delete-movie/:id', movieController.deleteMovie);
 router.get('/get-all-movies', movieController.getAllMovies);
-router.patch('/update-movie/:id', movieController.updateMovie)
+router.patch('/update-movie/:id', upload.single('cover_image'), movieController.updateMovie)
 module.exports = router;

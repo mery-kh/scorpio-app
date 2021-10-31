@@ -5,6 +5,7 @@
 /.idea
 /*/package-lock.json
 /.pnp
+/*/node_modules
 .pnp.js
 
 # testing
